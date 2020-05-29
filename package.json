@@ -4,12 +4,20 @@
   "description": "Sample project to show the usage of multiple spoken languages in cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-features": "cucumber-js ./features -r ./steps -f node_modules/cucumber-pretty"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.5"
   },
   "keywords": [
     "cucumber",
     "nodejs"
   ],
   "author": "Ravi Kishore Medaramitla",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cucumber-pretty": "^6.0.0",
+    "pretty": "^2.0.0"
+  }
 }
